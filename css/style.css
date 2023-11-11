@@ -172,6 +172,11 @@ footer ul{
   list-style: none;
   margin:5px;
   display:inline-block;
+  font-size:  15px;
+}
+
+footer ul li{
+  margin-bottom:20px;
 }
 
 footer input[type="text"] {
@@ -274,7 +279,7 @@ footer input[type="submit"] {
 #grid-container2{
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 0.2fr 0.1fr 10fr 0.01fr 0.8fr;
+  grid-template-rows: 0.2fr 0.1fr 5fr 0.01fr 0.8fr;
   grid-template-areas: 
   "header"
   "filter-section"
@@ -292,6 +297,10 @@ header{
 
 main{
   grid-area:main;
+}
+
+aside ul li{
+  padding-bottom: 15px;
 }
 
 /* Brødsmuler */
@@ -355,6 +364,7 @@ ul.filter li{
 
 img{
   width:190px;
+  height: 130px;
 }
 
 .product-img{
@@ -590,6 +600,10 @@ h1{
   padding:0;
   width:100%; 
 } 
+
+.endringer{
+  margin:7px;
+}
 
 .uu{
   grid-area: uu;
