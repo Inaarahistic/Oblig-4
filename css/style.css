@@ -1,15 +1,16 @@
 
 *{
   text-decoration:none;
-  color:black;
   margin:0;
   padding:0;
+  color:black;
 }
+
 
 #grid-container{
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 0.2fr 0.8fr 0.3fr 0.5fr 0.8fr 1fr 0.3fr;
+  grid-template-rows: 0.2fr 0.3fr 0.2fr 0.5fr 0.3fr 1fr 0.3fr;
   grid-template-areas: 
   "header"
   "hovedbilde"
@@ -17,6 +18,7 @@
   "article1"
   "img2"
   "article2"
+  "article3"
   "footer";
 }
 
@@ -56,28 +58,45 @@ header form{
   justify-content: center;
 }
 header input[type="text"] {
-  border: 1px solid #ccc;
+  background: rgb(154,81,140);
+  border-style:solid;
+  border-width:1px;
+  border-color:rgb(154,81,140);
   border-radius: 4px;
   height:17px;
   font-size: 12px;
+  color: rgb(255, 255, 255);
+  margin-right: 5px;
+  padding:5px;
 }
 header input[type="submit"] {
-  background: rgb(235,204,204);
-  color: rgb(128, 93, 93);
+  background: rgb(154, 81, 140);
+  color: rgb(255, 255, 255);
   border-style:solid;
   border-width:1px;
-  border-color:rgb(169, 150, 150);
+  border-color:rgb(154, 81, 140);
   border-radius: 4px;
   cursor: pointer;
   width:50px;
-  height:20px;
-  font-size:12px;
+  height: 29px;
+  font-size:15px;
+
+
+}
+
+::placeholder{
+  color:white;
+  padding:3px;
+  font-size:15px;
 }
 
 /*   HOVEDBILDE    */
 .hovedbilde{
   grid-area:hovedbilde;
-  width:100%;
+  width:600px;
+  height:400px;
+
+  
 }
 
 /*    NAV   */
@@ -93,12 +112,15 @@ nav{
    display:flex;
    justify-content: center;
 }
-.menn, .kvinner, .gym, .tur, .formell{
+.menn, .kvinner, .gym, .tur, .formell, .analyse{
   border-style:solid;
   border-width:1px;
-  padding:5px;
+  padding:15px;
   background-color: rgb(249, 231, 231);
-  border-color:rgb(202, 179, 149)
+  border-color:rgb(202, 179, 149);
+  font-size: 25px;
+  
+  
 }
 .navbar{
   display:flex;
@@ -128,11 +150,15 @@ h3{
   margin:10px;
 }
 
+.article3{
+  grid-area:article3;
+  margin:10px;
+}
+
 /*   FOOTER    */
 footer{
   grid-area:footer;
   background-color:rgb(255, 225, 225);
-  width:100%;
   font-size:1rem;
   padding:10px;
 }
@@ -169,6 +195,7 @@ footer input[type="submit"] {
   display: inline-block; 
 }
 
+
 /* MEDIA FORSIDE*/
 @media only screen and (min-width: 600px) {
   #grid-container{
@@ -184,6 +211,7 @@ footer input[type="submit"] {
       "img1 img1 article2 article2"
       "article1 img2 article2 article2"
       "footer footer footer footer";
+      font-size: 20px;
   }
   header{
     grid-area:header;
@@ -208,7 +236,7 @@ footer input[type="submit"] {
   .navbar{
     padding:10px;
   }
-  .menn, .kvinner, .gym, .tur, .formell{
+  .menn, .kvinner, .gym, .tur, .formell, .analyse{
     margin:8px;
   }
   .article1{
@@ -222,6 +250,8 @@ footer input[type="submit"] {
   }
   .img2{
     grid-area:img2;
+    width: 600px;
+    height: 400px;
   }
   footer{
     grid-area:footer;
@@ -366,6 +396,7 @@ footer{
       "main main main main"
       "pages2 pages2 pages2 pages2"
       "footer footer footer footer";
+      font-size: 20px;
   }
 
   header{
@@ -456,6 +487,7 @@ footer{
       "aside main main main"
       "aside main main main"
       "footer footer footer footer";
+      font-size: 20px;
   }
 
   header{
@@ -485,5 +517,91 @@ footer ul li{
   padding: 20px
 }
 }
+
+
+/* ANALYSE SIDE */
+
+#grid-container4{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 0.2fr 0.8fr 0.3fr 0.5fr 0.8fr;
+  grid-template-areas: 
+  "header"
+  "main"
+  "seo"
+  "uu"
+  "footer";
+}
+
+.header{
+  grid-area: header;
+  margin:10px;
+}
+
+h1{
+  display:flex;
+  justify-content: center;
+}
+
+.key{
+  display: flex;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+
+.text1{
+  margin-bottom: 5px;
+  padding: 10px;
+  border: solid;
+  border-width:1px;
+  border-top:none;
+  
+}
+.main{
+  grid-area: main;
+  margin:10px;
+} 
+
+.h2-seo{
+  display:flex;
+  justify-content: center;
+}
+
+.seo{
+  grid-area: seo;
+  margin:10px;
+  display:inline-block
+}
+
+.p-seo{
+  margin:5px;
+}
+
+
+.ss38{
+  margin:0;
+  padding:0;
+  width:100%
+
+}
+.ss39{
+  margin:0;
+  padding:0;
+  width:100%; 
+} 
+
+.uu{
+  grid-area: uu;
+  margin:10px;
+  display:inline-block
+
+}
+.footer{
+  grid-area: footer;
+  margin:10px;
+}
+
+
 
 
