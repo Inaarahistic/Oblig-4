@@ -10,9 +10,10 @@
 #grid-container{
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 0.2fr 0.3fr 0.2fr 0.5fr 0.3fr 1fr 0.3fr;
+  grid-template-rows: 0.2fr  0.2fr 0.3fr 0.2fr 0.5fr 0.3fr 1fr 0.3fr;
   grid-template-areas: 
   "header"
+  "overskrift"
   "hovedbilde"
   "nav"
   "article1"
@@ -96,6 +97,16 @@ header input[type="submit"] {
   width:600px;
   height:400px;
 
+  
+}
+
+.overskrift{
+  grid-area:overskrift;
+  margin:10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
   
 }
 
@@ -212,11 +223,20 @@ footer input[type="submit"] {
       gap:10px;
       grid-template-areas: 
       "header header header header"
+      "overskrift overskrift overskrift overskrift"
       "img1 img1 nav article3"
       "img1 img1 article2 article2"
       "article1 img2 article2 article2"
       "footer footer footer footer";
       font-size: 20px;
+  }
+  .overskrift{
+    grid-area:overskrift;
+    margin:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
   }
   header{
     grid-area:header;
@@ -534,10 +554,10 @@ footer ul li{
 #grid-container4{
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 0.2fr 0.8fr 0.3fr 0.5fr 0.8fr;
+  grid-template-rows: 0.1fr 0.3fr 0.5fr 0.5fr 0.2fr;
   grid-template-areas: 
   "header"
-  "main"
+  "section-key"
   "seo"
   "uu"
   "footer";
@@ -563,13 +583,11 @@ h1{
 .text1{
   margin-bottom: 5px;
   padding: 10px;
-  border: solid;
-  border-width:1px;
-  border-top:none;
+  
   
 }
-.main{
-  grid-area: main;
+.section-key{
+  grid-area: section-key;
   margin:10px;
 } 
 
@@ -589,31 +607,34 @@ h1{
 }
 
 
-.ss38{
-  margin:0;
-  padding:0;
-  width:100%
-
-}
-.ss39{
-  margin:0;
-  padding:0;
-  width:100%; 
-} 
-
-.endringer{
-  margin:7px;
+.ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48{
+  display:block;
+  margin:auto;
+  width:600px; 
+  height:300px;
+  margin-top: 10px;
+  margin-bottom:10px;
 }
 
-.uu{
-  grid-area: uu;
-  margin:10px;
-  display:inline-block
-
-}
 .footer{
   grid-area: footer;
   margin:10px;
+}
+
+.h4-endringer{
+  margin:10px
+}
+
+li{
+  margin-left:15px;
+}
+
+h3{
+  margin:10px;
+}
+
+h4{
+  margin: 10px;
 }
 
 
