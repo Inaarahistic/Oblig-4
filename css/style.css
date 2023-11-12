@@ -558,12 +558,13 @@ footer ul li{
 #grid-container4{
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 0.1fr 0.3fr 0.5fr 0.5fr 0.2fr;
+  grid-template-rows: 0.01fr 0.1fr 0.5fr 0.3fr 0.3fr 0.2fr;
   grid-template-areas: 
   "header"
-  "section-key"
-  "seo"
-  "uu"
+  "key"
+  "tabell"
+  "lighthouse"
+  "webaim"
   "footer";
 }
 
@@ -578,46 +579,53 @@ h1{
 }
 
 .key{
-  display: flex;
-  justify-content: center;
-  margin:0;
-  padding:0;
-}
-
-.text1{
-  margin-bottom: 5px;
-  padding: 10px;
-  
-  
-}
-.section-key{
-  grid-area: section-key;
+  grid-area: key;
   margin:10px;
-} 
-
-.h2-seo{
-  display:flex;
-  justify-content: center;
+  padding:5px;
 }
 
-.seo{
-  grid-area: seo;
+.tabell{
+  grid-area: tabell;
+  margin:10px;
+  font-size: 15px;
+  
+ 
+}
+section table tr td{
+  padding: 15px;
+  
+}
+
+
+section table tr td ul li{
+  margin:15px;
+}
+
+.figurecaption{
+  font-size:10px;
+}
+
+.lighthouse{
+  grid-area: lighthouse;
   margin:10px;
   display:inline-block
 }
-
-.p-seo{
-  margin:5px;
+.webaim{
+  grid-area: webaim;
+  margin:10px;
+  display:inline-block
 }
-
-
 .ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56{
   display:block;
   margin:auto;
-  width:600px; 
-  height:300px;
+  width: 370px;
+  height: 300px;
+  object-fit: cover;
   margin-top: 10px;
   margin-bottom:10px;
+}
+h3{
+  margin:10px;
 }
 
 .footer{
@@ -625,22 +633,46 @@ h1{
   margin:10px;
 }
 
-.h4-endringer{
-  margin:10px
+@media only screen and (min-width: 500px) {
+  #grid-container4{
+    .ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56{
+      width:100%;
+    }
+  }
+
 }
 
-li{
-  margin-left:15px;
+@media only screen and (min-width: 700px) {
+  #grid-container4{
+    .ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56{
+      width:600px;
+      height: 400px;
+    }
+
+  }
+
 }
 
-h3{
-  margin:10px;
+@media only screen and (max-width: 450px) {
+  #grid-container4{
+    .tabell{
+      margin:0px;
+      padding:0px;
+    }
+
+    section table tr td ul li{
+      margin:5px;
+    }
+
+    section table tr td{
+      padding: 0px;
+      
+    }
+
+
+
+
+  }
+
+
 }
-
-h4{
-  margin: 10px;
-}
-
-
-
-
