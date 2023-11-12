@@ -56,7 +56,7 @@ header li{
 
 header form{
   display:flex;
-  justify-content: center;
+  justify-content: right;
 }
 header input[type="text"] {
   background: rgb(154,81,140);
@@ -86,7 +86,7 @@ header input[type="submit"] {
 }
 
 ::placeholder{
-  color:white;
+  color:rgb(238, 195, 195);
   padding:3px;
   font-size:15px;
 }
@@ -218,14 +218,14 @@ footer input[type="submit"] {
       margin:10px;
       display:grid;
       height:100vh;
-      grid-template-columns: 1fr 1fr 1fr 1fr ;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 3fr 1fr 1fr 1fr ;
+      grid-template-rows: 3fr 1fr 1fr 1fr 1fr;
       gap:10px;
       grid-template-areas: 
       "header header header header"
       "overskrift overskrift overskrift overskrift"
-      "img1 img1 nav article3"
-      "img1 img1 article2 article2"
+      "  img1   nav article3 article3"
+      " article1  img2   article2 article2"
       "article1 img2 article2 article2"
       "footer footer footer footer";
       font-size: 20px;
@@ -238,6 +238,12 @@ footer input[type="submit"] {
     align-items: center;
     font-size: 30px;
   }
+  #form{
+    gap:10px;
+    align-items: center;
+  }
+  
+  
   header{
     grid-area:header;
   }
@@ -253,6 +259,7 @@ footer input[type="submit"] {
   .hovedbilde{
     grid-area:img1;
     height:100%;
+    width:100%;
     object-fit:cover;
   }
   nav{
@@ -374,9 +381,6 @@ ul.filter li{
 
 .pages li:hover{
   cursor:pointer;
-  text-decoration: underline;
-}
-.six{
   text-decoration: underline;
 }
 
@@ -607,7 +611,7 @@ h1{
 }
 
 
-.ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48{
+.ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56{
   display:block;
   margin:auto;
   width:600px; 

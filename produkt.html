@@ -16,20 +16,21 @@
 </head>
     <body>
         <div id="grid-container2">
-          <header class="header">
-            <nav>
-                <ul class="icons">
-                    <li class="bars"><a href="index.html" aria-label="hamburger-meny"></a><i class="fa-solid fa-bars"></i></li>
-                    <li class="user"><a href="index.html" aria-label="account"></a><i class="fa-solid fa-user"></i></li>
-                    <li class="logo"><a href="index.html">Sinbal</a></li>
-                    <li class="heart"><a href="index.html" aria-label="favorites"></a><i class="fa-regular fa-heart"></i></li>
-                    <li class="cart"><a href="index.html" aria-label="shopping-cart"></a><i class="fa-solid fa-cart-shopping"></i></li>
-                </ul>
-            </nav>
-            <form>
-                <input type="text" name="search" placeholder="Hva leter du etter?" id="searchbar">
-                <input type="submit" value="Søk">
-            </form>
+            <header class="header">
+                  
+                  <ul class="icons">
+                      <li class="bars"><a href="index.html" aria-label="hamburger-meny"></a><i class="fa-solid fa-bars"></i></li>
+                      <li class="user"><a href="index.html" aria-label="account"></a><i class="fa-solid fa-user"></i></li>
+                      <li class="logo"><a href="index.html">Sinbal</a></li>
+                      <li class="heart"><a href="index.html" aria-label="favorites"></a><i class="fa-regular fa-heart"></i></li>
+                      <li class="cart"><a href="index.html" aria-label="shopping-cart"></a><i class="fa-solid fa-cart-shopping"></i></li>                       
+                  </ul>
+                  <form id="form">
+                    <label for="searchbar">Hva leter du etter?</label>
+                    <input type="text" name="search" placeholder="Hva leter du etter?" id="searchbar" >
+                    <input type="submit" value="Søk">
+                  </form>
+                 
           </header>
           <section class="filter-section">
               <ul class="breadcrumb">
@@ -56,6 +57,7 @@
               </ul>
           </section>
           <main>
+            <h1>Sko for menn</h1>
             <section class="product-img">
               <section>
                   <!-- Kilde til bilder:
@@ -144,23 +146,24 @@
                   <li>&gt;</li>
           </ul>
           <footer>
-                    <ul class="footer-list">
-                        <li><a href="#">&#8226; Om oss</a></li>
-                        <li><a href="/retur.html">&#8226; Retur</a></li>
-                        <li><a href="#">&#8226; Kontakt Oss</a></li>
-                        <li><a href="#">&#8226; Ledige Stillinger</a></li>
-                    </ul>
-                    <section class="nyhetsbrev">
-                        <section class="nyhet-text">
-                            Abonner på vårt nyhetsbrev
-                        </section>
-                        <form>
-                            <input type="text" placeholder="Skriv din epost-adresse" name="epost">
-                            <input type="submit" value="Søk">
-                        </form>
-                    </section>
-
-          </footer>
+            <ul class="footer-list">
+                <li>&#8226; Om oss</li>
+                <li><a href="retur.html">&#8226; Retur</a></li>
+                <li>&#8226; Kontakt Oss</li>
+                <li>&#8226; Ledige Stillinger</li>
+            </ul>
+            <section class="nyhetsbrev">
+                <section class="nyhet-text">
+                    Abonner på vårt nyhetsbrev!
+                </section>
+                <form>
+                      <label for="epost">Epost</label>
+                      <input type="text" placeholder="Skriv din epost-adresse" name="epost" id="epost">
+                      <input type="submit" value="Søk">
+                    
+                </form>
+            </section>
+    </footer>
         </div>
     </body>
 </html>
