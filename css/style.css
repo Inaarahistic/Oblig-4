@@ -558,13 +558,14 @@ footer ul li{
 #grid-container4{
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 0.01fr 0.1fr 0.5fr 0.3fr 0.3fr 0.2fr;
+  grid-template-rows: 0.01fr 0.1fr 0.5fr 0.3fr 0.3fr 0.3fr 0.2fr;
   grid-template-areas: 
   "header"
   "key"
   "tabell"
   "lighthouse"
   "webaim"
+  "chatgpt"
   "footer";
 }
 
@@ -615,12 +616,18 @@ section table tr td ul li{
   margin:10px;
   display:inline-block
 }
-.ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56{
+
+.chatpgt{
+  grid-area: chatgpt;
+  margin:10px;
+  display:inline-block
+
+}
+.ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56, .ss59, .ss60, .ss61{
   display:block;
   margin:auto;
   width: 370px;
   height: 300px;
-  object-fit: cover;
   margin-top: 10px;
   margin-bottom:10px;
 }
@@ -633,9 +640,16 @@ h3{
   margin:10px;
 }
 
+
+
+
+
+
+
+
 @media only screen and (min-width: 500px) {
   #grid-container4{
-    .ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56{
+    .ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56, .ss59, .ss60, .ss61 {
       width:100%;
     }
   }
@@ -644,7 +658,7 @@ h3{
 
 @media only screen and (min-width: 700px) {
   #grid-container4{
-    .ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56{
+    .ss40, .ss44, .ss43, .ss45, .ss46, .ss47, .ss48, .ss49, .ss51, .ss52, .ss55, .ss56, .ss59, .ss60, .ss61{
       width:600px;
       height: 400px;
     }
