@@ -19,9 +19,9 @@
             <header class="header">
                   
                   <ul class="icons">
-                      <li class="bars"><a href="index.html" aria-label="hamburger-meny"></a><i class="fa-solid fa-bars"></i></li>
-                      <li class="user"><a href="index.html" aria-label="account"></a><i class="fa-solid fa-user"></i></li>
-                      <li class="logo"><a href="index.html">Sinbal</a></li>
+                      <li  class="bars"><a href="index.html" aria-label="hamburger-meny"></a><i class="fa-solid fa-bars"></i></li>
+                      <li  class="user"><a href="index.html" aria-label="account"></a><i class="fa-solid fa-user"></i></li>
+                      <li  class="logo"><a href="index.html">Sinbal</a></li>
                       <li class="heart"><a href="index.html" aria-label="favorites"></a><i class="fa-regular fa-heart"></i></li>
                       <li class="cart"><a href="index.html" aria-label="shopping-cart"></a><i class="fa-solid fa-cart-shopping"></i></li>                       
                   </ul>
@@ -35,9 +35,9 @@
           <section class="filter-section">
               <ul class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
-                itemtype="https://schema.org/ListItem"><a href="index.html">Home</a></li>
-                <li><a href="#">Menn</a></li>
-                <li><a href="#"><strong>Sneakers</strong></a></li>
+                itemtype="https://schema.org/ListItem"><a href="index.html" itemprop="name">Home</a><meta itemprop="position" content="1"></li>
+                <li itemprop="position" content="2"><a href="#" itemprop="name">Menn</a><meta itemprop="position" content="1"></li>
+                <li itemprop="position" content="3" ><a href="#" itemprop="name"><strong>Sneakers</strong></a><meta itemprop="position" content="1"></li>
               </ul> 
               
               <ul class="filter">
@@ -46,7 +46,7 @@
               </ul>
               <ul class="pages">
                 <li>&lt;</li>
-                <li>1</li>
+                <li >1</li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
@@ -57,7 +57,7 @@
                 <li>&gt;</li>
               </ul>
           </section>
-          <main>
+          <main itemscope itemtype="http://schema.org/Product">
             <h1>Sko for menn</h1>
             <section class="product-img">
               <section>
@@ -66,120 +66,149 @@
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Paolo sneakers</figcaption>
-                        <p><a href="#">Paolo sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
-                    
-                    
+                  <p><meta itemprop="name" content="Paolo sneakers"><a href="#">Paolo sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>  
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Xen sneakers</figcaption>
-                        <p><a href="#">Xen sneakers</a></p>
-                        <span>999kr</span>
+                        <span itemprop="priceCurrency" content="NOK"/>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Xen sneakers"><a href="#">Xen sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
+                        
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Mice sneakers</figcaption>
-                        <p><a href="#">Mice sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Mice sneakers"><a href="#">Mice sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Zoro sneakers</figcaption>
-                        <p><a href="#">Zoro sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Zoro sneakers"><a href="#">Zoro sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Kai sneakers</figcaption>
-                        <p><a href="#">Kai sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Kai sneakers"><a href="#">Kai sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Smoothie sneakers</figcaption>
-                        <p><a href="#">Smoothie sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Smoothie sneakers"><a href="#">Smoothie sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Fun sneakers</figcaption>
-                        <p><a href="#">Fun sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Fun sneakers"><a href="#">Fun sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Buddy sneakers</figcaption>
-                        <p><a href="#">Buddy sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Buddy sneakers"><a href="#">Buddy sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Luffy sneakers</figcaption>
-                        <p><a href="#">Luffy sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Luffy sneakers"><a href="#">Luffy sneakers</a></p>
+                        <span ><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Shams sneakers</figcaption>
-                        <p><a href="#">Shams sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Shams sneakers"><a href="#">Shams sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Lime sneakers</figcaption>
-                        <p><a href="#">Lime sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Lime sneakers"><a href="#">Lime sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Barty sneakers</figcaption>
-                        <p><a href="#">Barty sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Barty sneakers"><a href="#">Barty sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
               <section>
                   <figure>
                         <img src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Simpson sneakers</figcaption>
-                        <p><a href="#">Simpson sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="simpson sneakers"><a href="#">Simpson sneakers</a></p>
+                        <span ><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
+                        
               </section>
               <section>
                   <figure>
-                        <img src="img/placeholder.svg" alt="grå bilde">
+                        <img  itemprop="image" src="img/placeholder.svg" alt="grå bilde">
                         <figcaption class="figurecaption">Flex sneakers</figcaption>
-                        <p><a href="#">Flex sneakers</a></p>
-                        <span>999kr</span>
+                        
                   </figure>
+                  <p><meta itemprop="name" content="Flex sneakers"><a href="#">Flex sneakers</a></p>
+                        <span><meta itemprop="price" content="999" />999kr</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>
               </section>
             </section>
           </main>
           <ul class="pages2">
-                  <li>&lt;</li>
+                  <li >&lt;</li>
                   <li>1</li>
                   <li>2</li>
                   <li>3</li>
